@@ -5,26 +5,178 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Creador de Curriculums</title>
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="/css/estilos.css">
 </head>
 <body>
-<script>
-    var nombre =prompt ('Ingresa el Nombre del CV');
-  var apellido =prompt ('Ingresa el Apellido del CV');
-  var email =prompt ('Ingresa el Email del CV');
-  var telefono =prompt ('Ingresa el Telefono del CV');
-  var fecha =prompt ('Ingresa la Fecha de Nacimiento del CV');
-  
-  var estudios =prompt ('Ingresa los Estudios del CV');
-  var idiomas =prompt ('Ingresa los Idiomas del CV');
-  var proyectos =prompt ('Ingresa los Proyectos del CV');
-  var descripcion =prompt ('Ingresa la Descripcion del CV');
-  var dni =prompt ('Ingresa el DNI del CV');
-  var nacionalidad =prompt ('Ingresa la Nacionalidad del CV');
-  var cuil =prompt ('Ingresa el Cuil del CV');
-  var genero =prompt ('Ingresa el Genero del CV');
-  var domicilio =prompt ('Ingresa el Domicilio del CV');
-  var localidad =prompt ('Ingresa la Localidad del CV');
-  document.write(nombre);
-</script>
+  <main>
+    <form action="" class="formulario" id="formulario">
+
+                       <!-- Grupo Nombre -->
+      <div class="formulario__grupo formulario__grupo-correcto" id="grupo__name">
+        <label for="name" class="formulario__label">Nombre</label>
+        <input type="text" name="name" id="name" class="formulario__input" required placeholder="Escribe tu Nombre">
+        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+        <p class="formulario__input-error">Por favor ingresa el nombre completo.</p>
+      </div>
+
+      
+      
+                      <!-- Grupo Apellido -->
+      <div class="formulario__grupo" id="grupo__lastname">
+        <label for="lastname" class="formulario__label">Apellido</label>
+        <input type="text" name="lastname" id="lastname" class="formulario__input" required placeholder="Escribe tu Apellido">
+        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+        <p class="formulario__input-error">Por favor ingresa el apellido completo.</p>
+      </div>
+      
+
+                            <!-- Grupo email -->
+
+            <div class="formulario__grupo" id="grupo__email">
+        <label for="email" class="formulario__label">Email</label>
+        <input type="email" name="email" id="email" class="formulario__input"  placeholder="Escribe tu Email">
+        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+        <p class="formulario__input-error">ingresa el Email con el formato correcto.</p>
+      </div>
+
+                            <!-- Grupo telefono -->
+
+        <div class="formulario__grupo" id="grupo__telefono">
+        <label for="telefono" class="formulario__label">Telefono</label>
+        <input type="text" name="telefono" id="telefono" class="formulario__input"  placeholder="Escribe tu Telefono">
+        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+        <p class="formulario__input-error">ingresa el telefono con el formato correcto.</p>
+                            
+                              <!-- Grupo fecha -->
+
+        <div class="formulario__grupo" id="grupo__fecha">
+        <label for="fecha" class="formulario__label">Fecha</label>
+        <input type="date" name="fecha" id="fecha" class="formulario__input"  placeholder="Escribe tu Fecha de Nacimiento">
+        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+        <p class="formulario__input-error">Por favor ingresa la fecha de nacimiento.</p>
+
+      
+                             <!-- Grupo direccion -->
+        <div class="formulario__grupo" id="grupo__direccion">
+        <label for="direccion" class="formulario__label">Direccion</label>
+        <input type="text" name="direccion" id="direccion" class="formulario__input"  placeholder="Escribe tu Direccion">
+        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+        <p class="formulario__input-error">Por favor ingresa la direccion.</p>
+
+      
+                              <!-- Grupo Localidad -->
+                            
+        <div class="formulario__grupo" id="grupo__localidad">
+        <label for="localidad" class="formulario__label">Localidad</label>
+        <input type="text" name="localidad" id="localidad" class="formulario__input"  placeholder="Escribe tu Localidad">
+        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+        <p class="formulario__input-error">Por favor ingresa la localidad.</p>
+
+                               <!-- Grupo Estudios -->
+    
+        <div class="formulario__grupo" id="grupo__estudios">
+        <label for="estudios" class="formulario__label">Estudios</label>
+        <input type="text" name="estudios" id="estudios" class="formulario__input"  placeholder="Escribe tu Estudios Secundarios">
+        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+        <p class="formulario__input-error">Por favor ingresa los estudios secundarios.</p>
+
+                                 <!-- Grupo Idiomas -->
+        
+        <div class="formulario__grupo" id="grupo__idiomas">
+        <label for="idiomas" class="formulario__label">Idiomas</label>
+        <input type="text" name="idiomas" id="idiomas" class="formulario__input"  placeholder="Escribe tu Idiomas">
+        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+        <p class="formulario__input-error">Por favor ingresa los idiomas.</p>
+
+                                <!-- Grupo Formacion -->
+                              
+        <div class="formulario__grupo" id="grupo__formacion">
+        <label for="formacion" class="formulario__label">Formacion</label>
+        <input type="text" name="formacion" id="formacion" class="formulario__input"  placeholder="Escribe tu Formacion">
+        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+        <p class="formulario__input-error">Por favor ingresa la formacion.</p>
+
+      
+                                <!-- Grupo Experiencia -->
+      
+        <div class="formulario__grupo" id="grupo__experiencia">
+        <label for="experiencia" class="formulario__label">Experiencia</label>
+        <input type="text" name="experiencia" id="experiencia" class="formulario__input"  placeholder="Escribe tu Experiencia">
+        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+        <p class="formulario__input-error">Por favor ingresa la experiencia.</p>
+      
+      
+                                  <!-- Grupo paisdeorigen -->
+
+
+      <select required name="paisdeorigen" id="paisdeorigen">
+        <option value="Argentina">Argentina</option>
+        <option value="Bolivia">Bolivia</option>
+        <option value="Brasil">Brasil</option>
+        <option value="Chile">Chile</option>
+        <option value="Colombia">Colombia</option>
+        <option value="Ecuador">Ecuador</option>
+        <option value="Islas Malvinas">Islas Malvinas</option>
+        <option value="Guatemala">Guatemala</option>
+        <option value="Haiti">Haiti</option>
+        <option value="Honduras">Honduras</option>
+        <option value="Jamaica">Jamaica</option>
+        <option value="Mexico">Mexico</option>
+        <option value="Nicaragua">Nicaragua</option>
+        <option value="Panama">Panama</option>
+        <option value="Paraguay">Paraguay</option>
+        <option value="Peru">Peru</option>
+        <option value="Puerto Rico">Puerto Rico</option>
+        <option value="Rep. Dominicana">Rep. Dominicana</option>
+        <option value="Uruguay">Uruguay</option>
+        <option value="Venezuela">Venezuela</option>
+        <option value="EEUU">EEUU</option>
+      </select>
+      <br>
+      <br>
+                      <!-- Grupo DNI -->
+
+        <div class="formulario__grupo" id="grupo__dni">
+        <label for="dni" class="formulario__label">DNI</label>
+        <input type="text" name="dni" id="dni" class="formulario__input"   placeholder="Escribe tu DNI">
+        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+        <p class="formulario__input-error">Por favor ingresa el DNI.</p>
+
+
+                        <!-- Grupo CUIL -->
+        <div class="formulario__grupo" id="grupo__cuil">
+        <label for="cuil" class="formulario__label">CUIL</label>
+        <input type="text" name="cuil" id="cuil" class="formulario__input"  placeholder="Escribe tu CUIL">
+        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+        <p class="formulario__input-error">Por favor ingresa el CUIL.</p>
+      
+
+                      <!-- Grupo Foto -->
+        <div class="formulario__grupo" id="grupo__foto">
+        <label for="foto" class="formulario__label">Foto</label>
+        <input type="file" name="foto" id="foto" class="formulario__input">
+        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+        <p class="formulario__input-error">Por favor ingresa la foto.</p>
+
+        <div class="formulario__mensaje" id="formulario__mensaje">
+          <p><i class="fas fa-exclamation-triangle"></i><b> Error </b>Por favor rellena el formulario correctamente</p>
+        </div>
+      
+        <div class="formulario__grupo formulario__grupo-btn-enviar">
+          <button type="submit" class="formulario__btn">Enviar</button>
+          <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente</p>
+        </div>
+
+<!--       <input type="reset">
+
+      <input type="submit" value="Enviar"> -->
+    </form>
+  </main>
+
+<script src="js/formulario.js"></script>
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+
 </body>
 </html>
