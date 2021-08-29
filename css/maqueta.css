@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+}
+body{
+  max-width: 1024px;
+  font-family: 'Roboto', sans-serif;
+  background: #e5e5e5;
+  
+}
+main {
+  max-width: 800px;
+  width: 90%;
+  margin: auto;
+  padding: 40px;
+}
+.left {
+  font-family: 'Roboto', sans-serif;
+  float: left;
+  width: 30%;
+  background-color: #647087;
+  height: 100vh;
+  padding: 20px;
+}
+.left h2{
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+.left h2:first-child{
+  border-bottom: 2px solid #000;
+}
+.right {
+  float: right;
+  width: 70%;
+  background-color: lightgreen;
+  height: 100%;
+  padding-left: 40px; 
+}
+h1 {  font-size: 2em;  
+  text-align: center;
+  color: #000;
+  padding: 10px;
+  margin: 0;
+}
+.photo__figure-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: auto;
+  display: block;
+  text-align: center;
+  
+}
+.photo__figure-figcaption {
+  text-align: center;
+  margin-top: 10px;
+}
+.aboutme{
+  text-align: center;
+  margin-top: 20px;
+  width: 80%;
+}
+.aboutme h2{
+  text-transform: uppercase;
+  text-align: center;
+}
