@@ -72,3 +72,7 @@ h1 {  font-size: 2em;
   text-align: center;
   
 }
+.trabajo h3{
+  text-transform: uppercase;
+  list-style-type: square;
+}
