@@ -7,11 +7,14 @@ body{
   background: #e5e5e5;
   
 }
-main {
+/* main {
   max-width: 800px;
   width: 90%;
   margin: auto;
-  padding: 40px;
+  padding: 40px; */
+
+.container{
+  display: flex;
 }
 .left {
   font-family: 'Roboto', sans-serif;
@@ -20,6 +23,7 @@ main {
   background-color: #647087;
   height: 100vh;
   padding: 20px;
+  margin: 3%;
 }
 .left h2{
   text-transform: uppercase;
@@ -50,11 +54,12 @@ h1 {  font-size: 2em;
   margin: 0;
 }
 .photo__figure-img {
+  
   width: 200px;
   height: 200px;
   border-radius: 50%;
   margin: auto;
-  display: block;
+  display: flex;
   text-align: center;
   
 }
