@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 body{
-  max-width: 1024px;
+  /* max-width: 1024px; */
   font-family: 'Roboto', sans-serif;
   background: #e5e5e5;
   
